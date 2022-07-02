@@ -1,0 +1,16 @@
+:root {
+	--primary-color: #009f4d;
+	--secondary-color: #213364;
+	--title-color: #3f3a64;
+	--sub-title-color: #7e7d7d;
+	--text-color: #666;
+	--bg-grey: #f7f7f7;
+	--bg-lightgrey: #f8f9fa;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Jost", sans-serif;
+}
