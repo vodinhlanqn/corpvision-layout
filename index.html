@@ -1,140 +1,646 @@
 <!DOCTYPE html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Corp Vision</title>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Corp Vision</title>
+		<!-- BOOTSTRAP -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+			crossorigin="anonymous"
+		/>
 
-	<!-- BOOTSTRAP -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+		<!-- FONT AWESOME -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 
-	<!-- FONT AWESOME -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-		crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<!-- FONT GOOGLE: JOST-->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;900&display=swap"
+			rel="stylesheet"
+		/>
 
-	<!-- FONT GOOGLE: JOST-->
-	<link rel="preconnect" href="https://fonts.googleapis.com" />
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;900&display=swap"
-		rel="stylesheet" />
+		<!-- CDN ANIME CSS -->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+		/>
 
-	<!-- CDN ANIME CSS -->
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+		<!-- SLICK CSS -->
+		<link rel="stylesheet" href="./asset/slick/slick/slick.css" />
+		<link rel="stylesheet" href="./asset/slick/slick/slick-theme.css" />
 
-	<!-- SLICK CSS -->
-	<link rel="stylesheet" href="./asset/slick/slick/slick.css" />
-	<link rel="stylesheet" href="./asset/slick/slick/slick-theme.css" />
+		<!-- OWL CSS -->
+		<link rel="stylesheet" href="./asset/css/owl.carousel.min.css" />
+		<link rel="stylesheet" href="./asset/css/owl.theme.default.min.css" />
 
-	<!-- MAIN CSS -->
-	<link rel="stylesheet" href="./asset/css/style.css" />
-</head>
+		<!-- MAIN CSS -->
+		<link rel="stylesheet" href="./asset/css/style.css" />
 
-<body>
-	<header id="site-header" class="header">
-		<nav class="navbar navbar-expand-lg">
-			<div class="container">
-				<h1>
-					<a class="navbar-brand" href="./index.html">
-						<span class="fa fa-align-right"></span>
-						<span class="logo__title">Corp Vision</span>
-						<span class="logo__text">Vision to your Future</span>
-					</a>
-				</h1>
-				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-					aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-				</button>
-				<div class="collapse navbar-collapse" id="navbarSupportedContent">
-					<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-						<li class="nav-item">
-							<a class="nav-link active" aria-current="page" href="#">HOME</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">ABOUT</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">SERVICES</a>
-						</li>
-						<li class="nav-item dropdown">
-							<a class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
-								data-bs-toggle="dropdown" aria-expanded="false" href="#">PAGES<i
-									class="fa-solid fa-angle-down ms-2"></i></a>
-							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
-								<a class="dropdown-item" href="#">BLOG POSTS</a>
-								<a class="dropdown-item" href="#">404 PAGE</a>
-								<a class="dropdown-item" href="#">LANGDING PAGE</a>
-								<a class="dropdown-item" href="#">ELEMENTS PAGE </a>
-							</div>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="#">CONTACT</a>
-						</li>
-					</ul>
-					<div class="header__search me-3">
-						<i class="fa-solid fa-magnifying-glass"></i>
+		<!-- MAIN CSS -->
+		<link rel="stylesheet" href="./asset/css/style.css" />
+	</head>
+	<body>
+		<header id="site-header" class="header">
+			<nav class="navbar navbar-expand-lg">
+				<div class="container">
+					<h1>
+						<a class="navbar-brand" href="./index.html">
+							<span class="fa fa-align-right"></span>
+							<span class="logo__title">Corp Vision</span>
+							<span class="logo__text">Vision to your Future</span>
+						</a>
+					</h1>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-bs-toggle="collapse"
+						data-bs-target="#navbarSupportedContent"
+						aria-controls="navbarSupportedContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+					>
+						<span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+							<li class="nav-item">
+								<a class="nav-link active" aria-current="page" href="#">HOME</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">ABOUT</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">SERVICES</a>
+							</li>
+							<li class="nav-item dropdown">
+								<a
+									class="nav-link dropdown-toggle"
+									id="navbarDropdown"
+									role="button"
+									data-bs-toggle="dropdown"
+									aria-expanded="false"
+									href="#"
+									>PAGES<i class="fa-solid fa-angle-down ms-2"></i
+								></a>
+								<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+									<a class="dropdown-item" href="#">BLOG POSTS</a>
+									<a class="dropdown-item" href="#">404 PAGE</a>
+									<a class="dropdown-item" href="#">LANGDING PAGE</a>
+									<a class="dropdown-item" href="#">ELEMENTS PAGE </a>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#">CONTACT</a>
+							</li>
+						</ul>
+						<div class="header__search me-3">
+							<i class="fa-solid fa-magnifying-glass"></i>
+						</div>
+						<div class="header__weather">
+							<i class="sun"></i>
+							<i class="moon"></i>
+						</div>
 					</div>
-					<div class="header__weather">
-						<i class="sun"></i>
-						<i class="moon"></i>
+				</div>
+			</nav>
+		</header>
+		<main>
+			<section class="Home__carousel"></section>
+			<section class="Home__about"></section>
+			<section class="Home__creative"></section>
+			<section class="Home__services"></section>
+			<section class="Home__gallery"></section>
+			<section class="Home__result my-5">
+				<div class="container mb-3">
+					<div class="row align-items-center">
+						<div class="col-lg-6">
+							<img
+								src="./asset/img/about.jpg"
+								alt=""
+								class="radius-img img-fluid"
+							/>
+						</div>
+						<div class="col-lg-6 mt-lg-0 mt-md-5 mt-4">
+							<div class="Home__result-title">
+								<h6 class="sub-title sub-global">
+									Your Success is our success
+								</h6>
+								<h3 class="title-heading title-global mb-4 p-lg-2">
+									Web design, marketing & SEO solutions that get results
+								</h3>
+							</div>
+							<div class="Home__progress">
+								<div class="Home__progress-info info-1">
+									<h6 class="Home__progress-title">
+										Marketing
+										<span>80%</span>
+									</h6>
+									<div class="progress">
+										<div
+											class="progress-bar linear-1"
+											role="progressbar"
+											style="width: 80%"
+											aria-valuenow="80"
+											aria-valuemin="0"
+											aria-valuemax="100"
+										></div>
+									</div>
+								</div>
+								<div class="Home__progress-info info-2">
+									<h6 class="Home__progress-title">
+										Responsive Web design
+										<span>95%</span>
+									</h6>
+									<div class="progress">
+										<div
+											class="progress-bar linear-2"
+											role="progressbar"
+											style="width: 95%"
+											aria-valuenow="95"
+											aria-valuemin="0"
+											aria-valuemax="100"
+										></div>
+									</div>
+								</div>
+								<div class="Home__progress-info info-3">
+									<h6 class="Home__progress-title">
+										Analytics
+										<span>60%</span>
+									</h6>
+									<div class="progress">
+										<div
+											class="progress-bar linear-3"
+											role="progressbar"
+											style="width: 60%"
+											aria-valuenow="60"
+											aria-valuemin="0"
+											aria-valuemax="100"
+										></div>
+									</div>
+								</div>
+								<div class="Home__progress-info info-4">
+									<h6 class="Home__progress-title">
+										Web Development
+										<span>85%</span>
+									</h6>
+									<div class="progress">
+										<div
+											class="progress-bar linear-4"
+											role="progressbar"
+											style="width: 85%"
+											aria-valuenow="85"
+											aria-valuemin="0"
+											aria-valuemax="100"
+										></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="Home__testimonials my-5 py-5">
+				<div class="container py-lg-4 py-md-3 py-2 pb-lg-0">
+					<header class="Home__testimonials__header text-center">
+						<h6 class="sub-title sub-global">Happy Clients Feedback</h6>
+						<h3 class="title-heading title-global mb-4 p-lg-2">
+							Reviews and Testimonials
+						</h3>
+					</header>
+					<div class="Home__testimonial__content text-center">
+						<div class="container max-900">
+							<div class="owl-carousel owl-theme">
+								<div class="item">
+									<p class="test-text">
+										Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+										voluptate rem ullam dolore nisi voluptatibus esse quasi,
+										doloribus tempora. Dolores molestias adipisci dolo amet!.
+									</p>
+									<div
+										class="Home-testimonial-client justify-content-center text-start"
+									>
+										<div class="Home-testimonial-img">
+											<img
+												src="./asset/img/team1.jpg"
+												alt="client-img"
+												class="img-fluid"
+											/>
+										</div>
+										<div class="Home-testimonial-name align-self-center">
+											<h4>John Wilson</h4>
+											<p>Student</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="item">
+									<p class="test-text">
+										Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+										voluptate rem ullam dolore nisi voluptatibus esse quasi,
+										doloribus tempora. Dolores molestias adipisci dolo amet!.
+									</p>
+									<div
+										class="Home-testimonial-client justify-content-center text-start"
+									>
+										<div class="Home-testimonial-img">
+											<img
+												src="./asset/img/team2.jpg"
+												alt="client-img"
+												class="img-fluid"
+											/>
+										</div>
+										<div class="Home-testimonial-name align-self-center">
+											<h4>John Wilson</h4>
+											<p>Student</p>
+										</div>
+									</div>
+								</div>
+								<div class="item">
+									<p class="test-text">
+										Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+										voluptate rem ullam dolore nisi voluptatibus esse quasi,
+										doloribus tempora. Dolores molestias adipisci dolo amet!.
+									</p>
+									<div
+										class="Home-testimonial-client justify-content-center text-start"
+									>
+										<div class="Home-testimonial-img">
+											<img
+												src="./asset/img/team3.jpg"
+												alt="client-img"
+												class="img-fluid"
+											/>
+										</div>
+										<div class="Home-testimonial-name align-self-center">
+											<h4>John Wilson</h4>
+											<p>Student</p>
+										</div>
+									</div>
+								</div>
+
+								<div class="item">
+									<p class="test-text">
+										Lorem ipsum dolor sit amet elit. Velit beatae laudantium
+										voluptate rem ullam dolore nisi voluptatibus esse quasi,
+										doloribus tempora. Dolores molestias adipisci dolo amet!.
+									</p>
+									<div
+										class="Home-testimonial-client justify-content-center text-start"
+									>
+										<div class="Home-testimonial-img">
+											<img
+												src="./asset/img/team4.jpg"
+												alt="client-img"
+												class="img-fluid"
+											/>
+										</div>
+										<div class="Home-testimonial-name align-self-center">
+											<h4>John Wilson</h4>
+											<p>Student</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="Home__news py-5">
+				<div class="container py-lg-4 py-md-3 py-2 pb-lg-0">
+					<header class="Home__news__header text-center">
+						<h6 class="sub-title sub-global">Last News</h6>
+						<h3 class="title-heading title-global mb-4 p-lg-2">
+							Our insight and articles
+						</h3>
+					</header>
+					<div class="Home__news__content mb-4">
+						<div class="row">
+							<div class="col-lg-4 col-md-6 mb-3 Home__news__item">
+								<div class="card">
+									<div class="card-header p-0">
+										<img
+											src="./asset/img/blog1.jpg"
+											class="card-img-top"
+											data-src="holder.js/100x180/"
+											alt="Card image cap"
+										/>
+									</div>
+									<div class="card-body">
+										<p class="card-text">
+											<a href="">Startup Business</a>
+										</p>
+										<h4 class="card-title">
+											<a href="">Hello world!</a>
+										</h4>
+									</div>
+
+									<div class="card-footer">
+										<div class="author align-items-center p-0">
+											<p>
+												<a href="">
+													<img src="./asset/img/icon-logo.jpeg" alt="" />
+												</a>
+											</p>
+
+											<p>
+												<span>by</span>
+												<a href="">W3Layouts</a>
+											</p>
+											<p class="date">April 1, 2021</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 mb-3 Home__news__item">
+								<div class="card">
+									<div class="card-header p-0">
+										<img
+											src="./asset/img/blog2.jpg"
+											class="card-img-top"
+											data-src="holder.js/100x180/"
+											alt="Card image cap"
+										/>
+									</div>
+									<div class="card-body">
+										<p class="card-text">
+											<a href="">Startup Business</a>
+										</p>
+										<h4 class="card-title">
+											<a href="">
+												Companies in NY launched a joint project on a
+												three-tower hall
+											</a>
+										</h4>
+									</div>
+
+									<div class="card-footer">
+										<div class="author align-items-center p-0">
+											<p>
+												<a href="">
+													<img src="./asset/img/icon-logo.jpeg" alt="" />
+												</a>
+											</p>
+
+											<p>
+												<span>by</span>
+												<a href="">W3Layouts</a>
+											</p>
+											<p class="date">April 1, 2021</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 mb-3 Home__news__item">
+								<div class="card">
+									<div class="card-header p-0">
+										<img
+											src="./asset/img/blog3.jpg"
+											class="card-img-top"
+											data-src="holder.js/100x180/"
+											alt="Card image cap"
+										/>
+									</div>
+									<div class="card-body">
+										<p class="card-text">
+											<a href="">Marketing Strategy</a>
+										</p>
+										<h4 class="card-title">
+											<a href="">
+												Design breakthrough upgrades the product and ready to
+												launch
+											</a>
+										</h4>
+									</div>
+
+									<div class="card-footer">
+										<div class="author align-items-center p-0">
+											<p>
+												<a href="">
+													<img src="./asset/img/icon-logo.jpeg" alt="" />
+												</a>
+											</p>
+
+											<p>
+												<span>by</span>
+												<a href="">W3Layouts</a>
+											</p>
+											<p class="date">April 1, 2021</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="Home__subscribe py-5">
+				<div class="container">
+					<header class="Home__subscribe__header text-center">
+						<h3 class="title-heading title-global mb-4 p-lg-2 text-light">
+							Let’s find out how to work together
+						</h3>
+						<p class="sub-title">
+							Lorem ipsum dolor sit amet elit. Velit beatae rem ullam dolore
+							nisi esse quasi, sit amet. Lorem ipsum dolor sit amet elit.
+						</p>
+					</header>
+					<form action="" method="post" class="Home__subscribe__form mt-5">
+						<div class="icon">
+							<i class="fa-solid fa-paper-plane"></i>
+						</div>
+						<input
+							type="email"
+							name=""
+							id=""
+							placeholder="Your Email Address"
+						/>
+						<button class="btn btn-subscribe">Subscribe</button>
+					</form>
+				</div>
+			</section>
+		</main>
+		<footer class="footer">
+			<div class="footer__content py-5">
+				<div class="container">
+					<div class="row footer__list">
+						<div class="col-lg-4 col-md-6 mb-4 footer__item-1">
+							<div class="footer__item-logo mb-4">
+								<a href="" class="footer__item-brand">
+									<i class="fa-solid fa-align-right"></i>
+									<span>Corp Vision</span>
+									<span class="text-logo">Vision to your Future</span>
+								</a>
+							</div>
+							<p class="mb-3">
+								Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+								ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+								amet Semper at elit team advisors.
+							</p>
+							<div class="footer__item-socials">
+								<a href="">
+									<i class="fa-brands fa-facebook-f"></i>
+								</a>
+								<a href="">
+									<i class="fa-brands fa-twitter"></i>
+								</a>
+								<a href="">
+									<i class="fa-brands fa-instagram"></i>
+								</a>
+								<a href="">
+									<i class="fa-brands fa-linkedin-in"></i>
+								</a>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 mb-4 footer__item-2">
+							<h6 class="footer__title">Contact Info</h6>
+							<p class="mb-2">
+								Address : Corp Vision, 343 marketing, #21 cravel 1st lane
+								street, NY - 62617.
+							</p>
+							<p class="mb-2">
+								Phone Number :
+								<a href="tel: +1(21) 234 4567"> +1(21) 234 4567</a>
+							</p>
+							<p class="mb-2">
+								Email :
+								<a href="mailto:info@example.com"> info@example.com</a>
+							</p>
+							<p class="mb-2">
+								Support :
+								<a href="mailto: info@support.com"> info@support.com</a>
+							</p>
+						</div>
+						<div class="col-lg-2 col-md-6 col-sm-5 col-6 mb-4 footer__item-3">
+							<h6 class="footer__title">Categories</h6>
+							<ul>
+								<li>
+									<a href=""> Marketing Strategy</a>
+								</li>
+								<li>
+									<a href=""> Startup Business</a>
+								</li>
+								<li>
+									<a href=""> Web development</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-2 col-md-6 col-sm-5 col-6 mb-4 footer__item-4">
+							<h6 class="footer__title">Meta</h6>
+							<ul>
+								<li>
+									<a href="">Log in</a>
+								</li>
+								<li>
+									<a href="">Entries feed</a>
+								</li>
+								<li>
+									<a href=""> Comments feed</a>
+								</li>
+								<li>
+									<a href="">WordPress.org</a>
+								</li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
-		</nav>
-	</header>
-	<main>
-		<section class="Home__carousel">
-			<div class="carousel__overlay"></div>
+		</footer>
+		<section class="footer__copyright text-center">
+			<div class="container">
+				<p>
+					© 2022 Corp Vision All Rights Reserved | WordPress Theme by
+					<a href="">W3Layouts.</a>
+				</p>
+			</div>
 		</section>
-		<section class="Home__about"></section>
-		<section class="Home__creative"></section>
-		<section class="Home__services"></section>
-		<section class="Home__gallery"></section>
-		<section class="Home__result"></section>
-		<section class="Home__testimonials"></section>
-		<section class="Home__news"></section>
-		<section class="Home__subscribe"></section>
-	</main>
-	<footer class="footer"></footer>
 
-	<!-- JQUERY CDN -->
-	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
-		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
-	<!-- Boostrap 5 JS -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-		crossorigin="anonymous"></script>
-	<!-- Header scroll JS-->
-	<script>
-		$(window).on("scroll", function () {
-			var scroll = $(window).scrollTop();
+		<a
+			href=""
+			class="backToTop cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"
+			><i class="fa fa-angle-up"></i
+		></a>
 
-			if (scroll >= 80) {
-				$("#site-header").addClass("nav-fixed");
-			} else {
-				$("#site-header").removeClass("nav-fixed");
-			}
-		});
+		<!-- JQUERY CDN -->
+		<script
+			src="https://code.jquery.com/jquery-1.12.4.min.js"
+			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			crossorigin="anonymous"
+		></script>
 
-		//Main navigation Active Class Add Remove
-		$(".navbar-toggler").on("click", function () {
-			$("header").toggleClass("active");
-		});
-		$(document).on("ready", function () {
-			if ($(window).width() > 991) {
-				$("header").removeClass("active");
-			}
-			$(window).on("resize", function () {
+		<!-- OWL JS -->
+		<script src="./asset/js/owl.carousel.min.js"></script>
+		<script>
+			$(".owl-carousel").owlCarousel({
+				loop: true,
+				nav: false,
+				responsive: {
+					0: {
+						items: 1,
+					},
+					600: {
+						items: 1,
+					},
+					1000: {
+						items: 1,
+					},
+				},
+			});
+		</script>
+
+		<!-- BACK-TO-TOP JS -->
+		<script src="./asset/js/main.js"></script>
+		<script src="./asset/js/util.js"></script>
+
+		<!-- JQUERY CDN -->
+		<script
+			src="https://code.jquery.com/jquery-1.12.4.min.js"
+			integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+			crossorigin="anonymous"
+		></script>
+		<!-- Boostrap 5 JS -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+		<!-- Header scroll JS-->
+		<script>
+			$(window).on("scroll", function () {
+				var scroll = $(window).scrollTop();
+
+				if (scroll >= 80) {
+					$("#site-header").addClass("nav-fixed");
+				} else {
+					$("#site-header").removeClass("nav-fixed");
+				}
+			});
+
+			//Main navigation Active Class Add Remove
+			$(".navbar-toggler").on("click", function () {
+				$("header").toggleClass("active");
+			});
+			$(document).on("ready", function () {
 				if ($(window).width() > 991) {
 					$("header").removeClass("active");
 				}
+				$(window).on("resize", function () {
+					if ($(window).width() > 991) {
+						$("header").removeClass("active");
+					}
+				});
 			});
-		});
-	</script>
-</body>
-
+		</script>
+	</body>
 </html>
