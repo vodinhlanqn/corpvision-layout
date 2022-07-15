@@ -1,38 +1,1084 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Elements Page - Corp Vision Website</title>
 
-		<!-- BOOTSTRAP -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-			crossorigin="anonymous"
-		/>
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Elements Page - Corp Vision Website</title>
 
-		<!-- FONT AWESOME -->
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
-			integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
-			crossorigin="anonymous"
-			referrerpolicy="no-referrer"
-		/>
 
-		<!-- FONT GOOGLE: JOST-->
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;900&display=swap"
-			rel="stylesheet"
-		/>
+	<!-- BOOTSTRAP 5 -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
-		<!-- MAIN CSS -->
-		<link rel="stylesheet" href="./asset/css/style.css" />
-	</head>
-	<body></body>
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<!-- FONT GOOGLE: JOST-->
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600;700;900&display=swap"
+		rel="stylesheet" />
+
+	<!-- MAIN CSS -->
+	<link rel="stylesheet" href="./asset/css/style.css" />
+</head>
+
+<body>
+	<main>
+		<section class="Elements__content py-5">
+			<div class="container py-lg-5 py-md-4 py-2">
+
+				<!--JUMBOTRON - COMPONENT -->
+				<div class="Elements__component mb-4">
+					<h2 class="heading mb-3">Jumbotron</h2>
+					<div class="info">
+						<div class="jumbotron">
+							<h3 class="title display-4">Hello, world!</h3>
+							<p class="lead">
+								This is <span>a simple hero unit,</span> <span>a simple jumbotron-style component</span>
+								for calling extra attention to featured content or
+								information.
+							</p>
+							<hr class="my-4" />
+							<p class="text">
+								It uses utility classes for typography and spacing to space
+								content out within the larger container.
+							</p>
+							<p class="lead mt-5 mb-0">
+								<a href="#" class="btn btn-primary btn-style">Learn more</a>
+							</p>
+						</div>
+					</div>
+					<!-- CODE JUMBOTRON -->
+					<div class="code">
+						<pre><code class="language-html" data-lang="html"><span >&lt;div</span> <span>class=</span><span >"jumbotron"</span><span >&gt;</span>
+	<span >&lt;h1</span> <span>class=</span><span >"display-4"</span><span >&gt;</span><span>Hello, world!</span><span >&lt;/h1&gt;</span>
+	<span >&lt;hr</span> <span>class=</span><span >"my-4"</span><span >&gt;</span>
+	<span >&lt;p&gt;</span><span>It uses utility classes for typography and spacing to space content out within the larger container.</span><span >&lt;/p&gt;</span>
+	<span >&lt;p</span> <span>class=</span><span >"lead"</span><span >&gt;</span>
+	  <span>&lt;a</span> <span >class=</span><span >"btn btn-primary btn-lg"</span><span >href=</span><span >"#"</span> <span >role=</span><span >"button"</span><span>&gt;</span><span>Learn more</span><span>&lt;/a&gt;</span>
+	<span>&lt;/p&gt;</span>
+<span>&lt;/div&gt;</span></code></pre>
+					</div>
+				</div>
+
+				<!--FLUID JUMBOTRON - COMPONENT -->
+				<div class="Elements__component py-4">
+					<h2 class="heading mb-3">Fluid Jumbotron</h2>
+					<div class="info">
+						<div class="jumbotron jumbotron-fluid">
+							<div class="container">
+								<h3 class="title display-4">Fluid jumbotron</h3>
+								<p class="lead">
+									This is a modified jumbotron that occupies the entire horizontal space of its
+									parent.
+								</p>
+							</div>
+						</div>
+					</div>
+					<!-- CODE JUMBOTRON FLUID -->
+					<div class="code">
+						<pre><code class="language-html" data-lang="html"><span >&lt;div</span> <span>class=</span><span >"jumbotron jumbotron-fluid"</span><span >&gt;</span>
+	<span>&lt;div</span> <span>class=</span><span >"container"</span><span >&gt;</span>
+		<span >&lt;h1</span> <span>class=</span><span >"display-4"</span><span >&gt;</span><span>Fluid jumbotron</span><span >&lt;/h1&gt;</span>
+		<span >&lt;p</span> <span>class=</span><span >"lead"</span><span >&gt;</span><span>This is a modified jumbotron that occupies the entire horizontal space of its parent.</span><span>&lt;/p&gt;</span>
+	<span>&lt;/div&gt;</span>
+<span>&lt;/div&gt;</span></code></pre>
+					</div>
+				</div>
+
+				<!-- CARD DESKS - COMPONENT -->
+				<div class="Elements__component">
+					<h2 class="heading mb-3">Card Desks</h2>
+					<div class="info">
+						<div class="card-group">
+							<div class="card me-3 border">
+								<img src="./asset/img/b1.jpg" class="card-img-top" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">This is a wider card with supporting text below as a natural
+										lead-in to additional content. This content is a little bit longer.</p>
+									<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+							</div>
+							<div class="card me-3 border">
+								<img src="./asset/img/b2.jpg" class="card-img-top" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">This card has supporting text below as a natural lead-in to
+										additional content.</p>
+									<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+							</div>
+							<div class="card border">
+								<img src="./asset/img/b3.jpg" class="card-img-top" alt="Card image cap">
+								<div class="card-body">
+									<h5 class="card-title">Card title</h5>
+									<p class="card-text">This is a wider card with supporting text below as a natural
+										lead-in to additional content. This card has even longer content than the first
+										to show that equal height action.</p>
+									<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+								</div>
+							</div>
+						</div>
+						<!-- CODE CARD GROUP -->
+						<div class="code my-5">
+							<pre><code class="language-html" data-lang="html"><span >&lt;div</span> <span>class=</span><span >"card-group"</span><span >&gt;</span>
+	<span >&lt;div</span> <span>class=</span><span >"card me-3 border"</span><span >&gt;</span>
+		<span>&lt;img</span> <span >class=</span><span>"card-img-top"</span> <span >src=</span><span>"./assets/images/b1.jpg"</span> <span >alt=</span><span>"Card image cap"</span><span>&gt;</span>
+		<span >&lt;div</span> <span>class=</span><span >"card-body"</span><span >&gt;</span>
+			<span>&lt;h5</span> <span >class=</span><span>"card-title"</span><span>&gt;</span><span>Card title</span><span>&lt;/h5&gt;</span>
+			<span>&lt;p</span> <span >class=</span><span>"card-text"</span><span>&gt;</span><span>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</span><span>&lt;/p&gt;</span>
+			<span>&lt;p</span> <span >class=</span><span>"card-text"</span><span>&gt;&lt;small</span> <span >class=</span><span>"text-muted"</span><span>&gt;</span><span>Last updated 3 mins ago</span><span>&lt;/small&gt;&lt;/p&gt;</span>
+		<span>&lt;/div&gt;</span>
+	<span>&lt;/div&gt;</span>
+	<span >&lt;div</span> <span>class=</span><span >"card me-3 border"</span><span >&gt;</span>
+		<span>&lt;img</span> <span >class=</span><span>"card-img-top"</span> <span >src=</span><span>"./assets/images/b2.jpg"</span> <span >alt=</span><span>"Card image cap"</span><span>&gt;</span>
+		<span >&lt;div</span> <span>class=</span><span >"card-body"</span><span >&gt;</span>
+			<span>&lt;h5</span> <span >class=</span><span>"card-title"</span><span>&gt;</span><span>Card title</span><span>&lt;/h5&gt;</span>
+			<span>&lt;p</span> <span >class=</span><span>"card-text"</span><span>&gt;</span><span>This card has supporting text below as a natural lead-in to additional content.</span><span>&lt;/p&gt;</span>
+			<span>&lt;p</span> <span >class=</span><span>"card-text"</span><span>&gt;&lt;small</span> <span >class=</span><span>"text-muted"</span><span>&gt;</span><span>Last updated 3 mins ago</span><span>&lt;/small&gt;&lt;/p&gt;</span>
+		<span>&lt;/div&gt;</span>
+	<span>&lt;/div&gt;</span>
+	<span >&lt;div</span> <span>class=</span><span >"card border"</span><span >&gt;</span>
+		<span>&lt;img</span> <span >class=</span><span>"card-img-top"</span> <span >src=</span><span>"./assets/images/b3.jpg"</span> <span >alt=</span><span>"Card image cap"</span><span>&gt;</span>
+		<span >&lt;div</span> <span>class=</span><span >"card-body"</span><span >&gt;</span>
+			<span>&lt;h5</span> <span >class=</span><span>"card-title"</span><span>&gt;</span><span>Card title</span><span>&lt;/h5&gt;</span>
+			<span>&lt;p</span> <span >class=</span><span>"card-text"</span><span>&gt;</span><span>This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</span><span>&lt;/p&gt;</span>
+			<span>&lt;p</span> <span >class=</span><span>"card-text"</span><span>&gt;&lt;small</span> <span >class=</span><span>"text-muted"</span><span>&gt;</span><span>Last updated 3 mins ago</span><span>&lt;/small&gt;&lt;/p&gt;</span>
+		<span>&lt;/div&gt;</span>
+	<span>&lt;/div&gt;</span>
+<span>&lt;/div&gt;</span></code></pre>
+						</div>
+					</div>
+				</div>
+
+				<!-- BREADCRUMB - COMPONENT -->
+				<div class="Elements__component py-4 ">
+					<h2 class="heading mb-3">Breadcrumbs</h2>
+					<div class="info">
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item active" aria-current="page">Home</li>
+							</ol>
+						</nav>
+
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#">Home</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Library</li>
+							</ol>
+						</nav>
+
+						<nav aria-label="breadcrumb">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#">Home</a></li>
+								<li class="breadcrumb-item"><a href="#">Library</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Data</li>
+							</ol>
+						</nav>
+
+						<!-- BREADCRUMB CODE -->
+						<div class="code">
+							<pre><code class="language-html" data-lang="html"><span >&lt;</span><span>nav</span> <span >aria-label</span><span>=</span><span>"breadcrumb"</span><span >&gt;</span>
+	<span >&lt;</span><span>ol</span> <span >class</span><span>=</span><span>"breadcrumb"</span><span >&gt;</span>
+		<span >&lt;</span><span>li</span> <span >class</span><span>=</span><span>"breadcrumb-item active"</span> <span >aria-current</span><span>=</span><span>"page"</span><span >&gt;</span><span>Home</span><span >&lt;/</span><span>li</span><span >&gt;</span>
+	<span >&lt;/</span><span>ol</span><span >&gt;</span>
+<span >&lt;/</span><span>nav</span><span >&gt;</span>
+													
+<span >&lt;</span><span>nav</span> <span >aria-label</span><span>=</span><span>"breadcrumb"</span><span >&gt;</span>
+	<span >&lt;</span><span>ol</span> <span >class</span><span>=</span><span>"breadcrumb"</span><span >&gt;</span>
+		<span >&lt;</span><span>li</span> <span >class</span><span>=</span><span>"breadcrumb-item"</span><span >&gt;&lt;</span><span>a</span> <span >href</span><span>=</span><span>"#"</span><span >&gt;</span><span>Home</span><span >&lt;/</span><span>a</span><span >&gt;&lt;/</span><span>li</span><span >&gt;</span>
+		<span >&lt;</span><span>li</span> <span >class</span><span>=</span><span>"breadcrumb-item active"</span> <span >aria-current</span><span>=</span><span>"page"</span><span >&gt;</span><span>Library</span><span >&lt;/</span><span>li</span><span >&gt;</span>
+	<span >&lt;/</span><span>ol</span><span >&gt;</span>
+<span >&lt;/</span><span>nav</span><span >&gt;</span>
+													
+<span >&lt;</span><span>nav</span> <span >aria-label</span><span>=</span><span>"breadcrumb"</span><span >&gt;</span>
+	<span >&lt;</span><span>ol</span> <span >class</span><span>=</span><span>"breadcrumb"</span><span >&gt;</span>
+		<span >&lt;</span><span>li</span> <span >class</span><span>=</span><span>"breadcrumb-item"</span><span >&gt;&lt;</span><span>a</span> <span >href</span><span>=</span><span>"#"</span><span >&gt;</span><span>Home</span><span >&lt;/</span><span>a</span><span >&gt;&lt;/</span><span>li</span><span >&gt;</span>
+		<span >&lt;</span><span>li</span> <span >class</span><span>=</span><span>"breadcrumb-item"</span><span >&gt;&lt;</span><span>a</span> <span >href</span><span>=</span><span>"#"</span><span >&gt;</span><span>Library</span><span >&lt;/</span><span>a</span><span >&gt;&lt;/</span><span>li</span><span >&gt;</span>
+		<span >&lt;</span><span>li</span> <span >class</span><span>=</span><span>"breadcrumb-item active"</span> <span >aria-current</span><span>=</span><span>"page"</span><span >&gt;</span><span>Data</span><span >&lt;/</span><span>li</span><span >&gt;</span>
+	<span >&lt;/</span><span>ol</span><span >&gt;</span>
+<span >&lt;/</span><span>nav</span><span >&gt;</span></code></pre>
+						</div>
+					</div>
+				</div>
+
+				<!-- BUTTON - COMPONENT -->
+				<div class="Elements__component py-4 ">
+					<h2 class="heading mb-3">Buttons</h2>
+					<div class="info">
+						<button type="button" class="btn btn-primary">Primary</button>
+						<button type="button" class="btn btn-secondary">Secondary</button>
+						<button type="button" class="btn btn-success">Success</button>
+						<button type="button" class="btn btn-danger">Danger</button>
+						<button type="button" class="btn btn-warning">Warning</button>
+						<button type="button" class="btn btn-info">Info</button>
+						<button type="button" class="btn btn-light">Light</button>
+						<button type="button" class="btn btn-dark">Dark</button>
+						<button type="button" class="btn btn-link">Link</button>
+					</div>
+
+					<!-- BUTTON CODE -->
+					<div class="code">
+						<pre><code class="language-html" data-lang="html">
+<span>&lt;button</span> <span>type=</span><span>"button"</span> <span>class=</span><span>"btn btn-primary"</span><span>&gt;</span><span>Primary</span><span>&lt;/button&gt;</span>
+<span>&lt;button</span> <span>type=</span><span>"button"</span> <span>class=</span><span>"btn btn-secondary"</span><span>&gt;</span><span>Secondary</span><span>&lt;/button&gt;</span>
+<span>&lt;button</span> <span>type=</span><span>"button"</span> <span>class=</span><span>"btn btn-success"</span><span>&gt;</span><span><span>Success</span><span>&lt;/button&gt;</span>
+<span>&lt;button</span> <span>type=</span><span>"button"</span> <span>class=</span><span>"btn btn-danger"</span><span>&gt;</span><span><span>Danger</span><span>&lt;/button&gt;</span>
+<span>&lt;button</span> <span>type=</span><span>"button"</span> <span>class=</span><span>"btn btn-warning"</span><span>&gt;</span><span><span>Warning</span><span>&lt;/button&gt;</span>
+<span>&lt;button</span> <span>type=</span><span>"button"</span> <span>class=</span><span>"btn btn-info"</span><span>&gt;</span><span><span>Info</span><span>&lt;/button&gt;</span>
+<span>&lt;button</span> <span>type=</span><span>"button"</span> <span>class=</span><span>"btn btn-light"</span><span>&gt;</span><span><span>Light</span><span>&lt;/button&gt;</span>
+<span>&lt;button</span> <span>type=</span><span>"button"</span> <span>class=</span><span>"btn btn-dark"</span><span>&gt;</span><span><span>Dark</span><span>&lt;/button&gt;</span>
+<span>&lt;button</span> <span>type=</span><span>"button"</span> <span>class=</span><span>"btn btn-link"</span><span>&gt;</span><span><span>Link</span><span>&lt;/button&gt;</span>
+</code></pre>
+					</div>
+				</div>
+
+				<!-- BUTTON OUTLINE - COMPONENT -->
+				<div class="Elements__component py-4 ">
+					<h2 class="heading mb-3">Outline Buttons</h2>
+					<div class="info">
+						<button type="button" class="btn btn-outline-primary">Primary</button>
+						<button type="button" class="btn btn-outline-secondary">Secondary</button>
+						<button type="button" class="btn btn-outline-success">Success</button>
+						<button type="button" class="btn btn-outline-danger">Danger</button>
+						<button type="button" class="btn btn-outline-warning">Warning</button>
+						<button type="button" class="btn btn-outline-info">Info</button>
+						<button type="button" class="btn btn-outline-light">Light</button>
+						<button type="button" class="btn btn-outline-dark">Dark</button>
+					</div>
+
+					<!--  BUTTON OUTLINE CODE -->
+					<div class="code">
+						<pre><code class="language-html" data-lang="html">
+<span>&lt;button</span> <span>type=</span><span>"button"</span> <span>class=</span><span>"btn btn-primary"</span><span>&gt;</span><span>Primary</span><span>&lt;/button&gt;</span>
+<span>&lt;button</span> <span>type=</span><span>"button"</span> <span>class=</span><span>"btn btn-secondary"</span><span>&gt;</span><span>Secondary</span><span>&lt;/button&gt;</span>
+<span>&lt;button</span> <span>type=</span><span>"button"</span> <span>class=</span><span>"btn btn-success"</span><span>&gt;</span><span><span>Success</span><span>&lt;/button&gt;</span>
+<span>&lt;button</span> <span>type=</span><span>"button"</span> <span>class=</span><span>"btn btn-danger"</span><span>&gt;</span><span><span>Danger</span><span>&lt;/button&gt;</span>
+<span>&lt;button</span> <span>type=</span><span>"button"</span> <span>class=</span><span>"btn btn-warning"</span><span>&gt;</span><span><span>Warning</span><span>&lt;/button&gt;</span>
+<span>&lt;button</span> <span>type=</span><span>"button"</span> <span>class=</span><span>"btn btn-info"</span><span>&gt;</span><span><span>Info</span><span>&lt;/button&gt;</span>
+<span>&lt;button</span> <span>type=</span><span>"button"</span> <span>class=</span><span>"btn btn-light"</span><span>&gt;</span><span><span>Light</span><span>&lt;/button&gt;</span>
+<span>&lt;button</span> <span>type=</span><span>"button"</span> <span>class=</span><span>"btn btn-dark"</span><span>&gt;</span><span><span>Dark</span><span>&lt;/button&gt;</span>
+
+</code></pre>
+					</div>
+				</div>
+
+				<!-- BUTTON TAGS - COMPONENT -->
+				<div class="Elements__component py-4 ">
+					<h2 class="heading mb-3">Buttons Tags</h2>
+					<div class="info">
+						<a class="btn btn-primary" href="#" role="button">Link</a>
+						<button class="btn btn-primary" type="submit">Button</button>
+						<input class="btn btn-primary" type="button" value="Input">
+						<input class="btn btn-primary" type="submit" value="Submit">
+						<input class="btn btn-primary" type="reset" value="Reset">
+					</div>
+
+					<!-- BUTTON TAGS CODE -->
+					<div class="code">
+						<pre><code class="language-html" data-lang="html">
+<span>&lt;</span><span>a</span> <span>class</span><span>=</span><span >"btn btn-primary"</span> <span>href</span><span>=</span><span>"#"</span><span>role</span><span>=</span><span>"button"</span><span>&gt;</span><span>Link</span><span>&lt;/</span><spa>a</spa<span>&gt;</span>
+
+<span>&lt;</span><span>button</span> <span>class</span><span>=</span><span>"btn btn-primary"</span> <span>type</span><span>=</span><span>"submit"</span><span>&gt;</span><span>Button</span><span>&lt;/</span><span>button</span><span>&gt;</span>
+<span>&lt;</span><span>input</span> <span>class</span><span>=</span><span>"btn btn-primary"</span> <span>type</span><span>=</span><span>"button"</span> <span>value</span><span>=</span><span>"Input"</span><span>&gt;</span>
+<span>&lt;</span><span>input</span> <span>class</span><span>=</span><span>"btn btn-primary"</span> <span>type</span><span>=</span><span>"submit"</span> <span>value</span><span>=</span><span>"Submit"</span><span>&gt;</span>
+<span>&lt;</span><span>input</span> <span>class</span><span>=</span><span>"btn btn-primary"</span> <span>type</span><span>=</span><span>"reset"</span> <span>value</span><span>=</span><span>"Reset"</span><span>&gt;</span>
+</code></pre>
+					</div>
+				</div>
+
+				<!-- Modal Popup - COMPONENT -->
+				<div class="Elements__component py-4 ">
+					<h2 class="heading mb-3">Modal Popup</h2>
+					<div class="info modal-button-style">
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+							data-bs-target="#exampleModal">
+							Popup Modal
+						</button>
+
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+							aria-hidden="true">
+							<div class="modal-dialog">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalLabel">Popup Modal</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										Woohoo, you're reading this text in a modal!
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary"
+											data-bs-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary">Save changes</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- MODAL POPUP CODE -->
+					<div class="code">
+						<pre><code class="language-html" data-lang="html">
+<span>&lt;!-- Button trigger modal --&gt;</span>
+<span>&lt;</span><span>button</span> <span>type</span><span>=</span><span>"button"</span> <span>class</span><span>=</span><span>"btn btn-primary"</span> <span>data-bs-toggle</span><span>=</span><span>"modal"</span><span>data-bs-target</span><span>=</span><span>"#exampleModal"</span><span>&gt;</span>
+<span>Popup modal</span>
+<span>&lt;/</span><span>button</span><span>&gt;</span>
+
+<span>&lt;!-- Modal --&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"modal fade"</span> <span>id</span><span>=</span><span>"exampleModal"</span> <span>tabindex</span><span>=</span><span>"-1"</span><span>aria-labelledby</span><span>=</span><span>"exampleModalLabel"</span> <span>aria-hidden</span><span>=</span><span>"true"</span><span>&gt;</span>
+	<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"modal-dialog"</span><span>&gt;</span>
+		<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"modal-content"</span><span>&gt;</span>
+			<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"modal-header"</span><span>&gt;</span>
+				<span>&lt;</span><span>h5</span> <span>class</span><span>=</span><span>"modal-title"</span> <span>id</span><span>=</span><span>"exampleModalLabel"</span><span>&gt;</span><span>Modal title</span><span>&lt;/</span><span>h5</span><span>&gt;</span>
+				<span>&lt;</span><span>button</span> <span>type</span><span>=</span><span>"button"</span> <span>class</span><span>=</span><span>"btn-close"</span><span>data-bs-dismiss</span><span>=</span><span>"modal"</span> <span>aria-label</span><span>=</span><span>"Close"</span><span>&gt;&lt;/</span><span>button</span><span>&gt;</span>
+			<span>&lt;/</span><span>div</span><span>&gt;</span>
+			<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"modal-body"</span><span>&gt;</span>
+				<span>Woohoo, you're reading this text in a modal!</span>
+			<span>&lt;/</span><span>div</span><span>&gt;</span>
+			<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"modal-footer"</span><span>&gt;</span>
+				<span>&lt;</span><span>button</span> <span>type</span><span>=</span><span>"button"</span> <span>class</span><span>=</span><span>"btn btn-secondary"</span> <span>data-bs-dismiss</span><span>=</span><span>"modal"</span><span>&gt;</span><span>Close</span><span>&lt;/</span><span>button</span><span>&gt;</span>
+				<span>&lt;</span><span>button</span> <span>type</span><span>=</span><span>"button"</span> <span>class</span><span>=</span><span>"btn btn-primary"</span><span>&gt;</span><span>Save changes</span><span>&lt;/</span><span>button</span><span>&gt;</span>
+			<span>&lt;/</span><span>div</span><span>&gt;</span>
+		<span>&lt;/</span><span>div</span><span>&gt;</span>
+	<span>&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+</code></pre>
+					</div>
+				</div>
+
+				<!-- Vertically Centered Modal - COMPONENT -->
+				<div class="Elements__component py-4 ">
+					<h2 class="heading mb-3">Vertically Centered Modal</h2>
+					<div class="info modal-button-style">
+						<!-- Button trigger modal -->
+						<button type="button" class="btn btn-primary" data-bs-toggle="modal"
+							data-bs-target="#exampleModalCenter">
+							Centered Modal
+						</button>
+						<!-- Modal -->
+						<div class="modal fade" id="exampleModalCenter" tabindex="-1"
+							aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalCenterTitle">Vertically Centered Modal
+										</h5>
+										<button type="button" class="btn-close" data-bs-dismiss="modal"
+											aria-label="Close"></button>
+									</div>
+									<div class="modal-body">
+										This is a vertically centered modal.
+									</div>
+									<div class="modal-footer">
+										<button type="button" class="btn btn-secondary"
+											data-bs-dismiss="modal">Close</button>
+										<button type="button" class="btn btn-primary">Save changes</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Vertically Centered Modal CODE -->
+					<div class="code">
+						<pre><code class="language-html" data-lang="html">
+<span>&lt;!-- Button trigger modal --&gt;</span>
+<span>&lt;</span><span>button</span> <span>type</span><span>=</span><span>"button"</span> <span>class</span><span>=</span><span>"btn btn-primary"</span> <span>data-bs-toggle</span><span>=</span><span>"modal"</span><span>data-bs-target</span><span>=</span><span>"#exampleModalCenter"</span><span>&gt;</span>
+<span>Popup modal</span>
+<span>&lt;/</span><span>button</span><span>&gt;</span>
+					
+<span>&lt;!-- Modal --&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"modal fade"</span> <span>id</span><span>=</span><span>"exampleModalCenter"</span> <span>tabindex</span><span>=</span><span>"-1"</span><span>aria-labelledby</span><span>=</span><span>"exampleModalCenterTitle"</span> <span>aria-hidden</span><span>=</span><span>"true"</span><span>&gt;</span>
+	<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"modal-dialog modal-dialog-centered"</span><span>&gt;</span>
+		<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"modal-content"</span><span>&gt;</span>
+			<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"modal-header"</span><span>&gt;</span>
+				<span>&lt;</span><span>h5</span> <span>class</span><span>=</span><span>"modal-title"</span> <span>id</span><span>=</span><span>"exampleModalCenterTitle"</span><span>&gt;</span><span>Vertically Centered Modal</span><span>&lt;/</span><span>h5</span><span>&gt;</span>
+				<span>&lt;</span><span>button</span> <span>type</span><span>=</span><span>"button"</span> <span>class</span><span>=</span><span>"btn-close"</span><span>data-bs-dismiss</span><span>=</span><span>"modal"</span> <span>aria-label</span><span>=</span><span>"Close"</span><span>&gt;&lt;/</span><span>button</span><span>&gt;</span>
+			<span>&lt;/</span><span>div</span><span>&gt;</span>
+			<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"modal-body"</span><span>&gt;</span>
+				<span>This is a vertically centered modal.</span>
+			<span>&lt;/</span><span>div</span><span>&gt;</span>
+			<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"modal-footer"</span><span>&gt;</span>
+				<span>&lt;</span><span>button</span> <span>type</span><span>=</span><span>"button"</span> <span>class</span><span>=</span><span>"btn btn-secondary"</span> <span>data-bs-dismiss</span><span>=</span><span>"modal"</span><span>&gt;</span><span>Close</span><span>&lt;/</span><span>button</span><span>&gt;</span>
+				<span>&lt;</span><span>button</span> <span>type</span><span>=</span><span>"button"</span> <span>class</span><span>=</span><span>"btn btn-primary"</span><span>&gt;</span><span>Save changes</span><span>&lt;/</span><span>button</span><span>&gt;</span>
+			<span>&lt;/</span><span>div</span><span>&gt;</span>
+		<span>&lt;/</span><span>div</span><span>&gt;</span>
+	<span>&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+</code></pre>
+					</div>
+				</div>
+
+				<!-- ALERTS - COMPONENT -->
+				<div class="Elements__component">
+					<div class="row mt-5">
+						<!-- Alerts -->
+						<div class="col-lg-6">
+							<h2 class="heading mb-3">Alerts</h2>
+							<div class="alert alert-primary" role="alert">
+								<span>A simple primary alert—check it</span> out!
+							</div>
+							<div class="alert alert-secondary" role="alert">
+								<span>A simple secondary alert—check it</span> out!
+							</div>
+							<div class="alert alert-success" role="alert">
+								<span>A simple success alert—check it</span> out!
+							</div>
+							<div class="alert alert-danger" role="alert">
+								<span>A simple danger alert—check it</span> out!
+							</div>
+							<div class="alert alert-warning" role="alert">
+								<span>A simple warning alert—check it</span> out!
+							</div>
+							<div class="alert alert-info" role="alert">
+								<span>A simple info alert—check it</span> out!
+							</div>
+							<div class="alert alert-light" role="alert">
+								<span>A simple light alert—check it</span> out!
+							</div>
+							<div class="alert alert-dark" role="alert">
+								<span>A simple dark alert—check it</span> out!
+							</div>
+						</div>
+						<!-- //Alerts -->
+
+						<!-- Alerts CODE -->
+						<div class="col-lg-6">
+							<div class="code">
+								<pre><code class="language-html" data-lang="html">
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"alert alert-primary"</span> <span>role</span><span>=</span><span>"alert"</span><span>&gt;</span>
+<span><span>A simple primary alert—check it</span> out!</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"alert alert-secondary"</span> <span>role</span><span>=</span><span>"alert"</span><span>&gt;</span>
+<span><span>A simple secondary alert—check it</span> out!</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"alert alert-success"</span> <span>role</span><span>=</span><span>"alert"</span><span>&gt;</span>
+<span><span>A simple success alert—check it</span> out!</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"alert alert-danger"</span> <span>role</span><span>=</span><span>"alert"</span><span>&gt;</span>
+<span><span>A simple danger alert—check it</span> out!</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"alert alert-warning"</span> <span>role</span><span>=</span><span>"alert"</span><span>&gt;</span>
+<span><span>A simple warning alert—check it</span> out!</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"alert alert-info"</span> <span>role</span><span>=</span><span>"alert"</span><span>&gt;</span>
+<span><span>A simple info alert—check it</span> out!</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"alert alert-light"</span> <span>role</span><span>=</span><span>"alert"</span><span>&gt;</span>
+<span><span>A simple light alert—check it</span> out!</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"alert alert-dark"</span> <span>role</span><span>=</span><span>"alert"</span><span>&gt;</span>
+<span><span>A simple dark alert—check it</span> out!</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+</code></pre>
+							</div>
+						</div>
+						<!-- //Alerts CODE -->
+					</div>
+				</div>
+
+				<!-- LINK COLOR - COMPONENT -->
+				<div class="Elements__component mt-5">
+					<div class="row mt-5">
+						<!-- LINK COLOR -->
+						<div class="col-lg-6">
+							<h2 class="heading mb-3">Link Color</h2>
+							<div class="alert alert-primary" role="alert">
+								<span>A simple primary alert with</span>
+								<a href="#" class="alert-link">an example
+									link</a>. Give it
+								a click if you like.
+							</div>
+							<div class="alert alert-secondary" role="alert">
+								<span>A simple secondary alert with</span>
+								<a href="#" class="alert-link">an example
+									link</a>. Give
+								it a click if you like.
+							</div>
+							<div class="alert alert-success" role="alert">
+								<span>A simple success alert with</span>
+								<a href="#" class="alert-link">an example
+									link</a>. Give it
+								a click if you like.
+							</div>
+							<div class="alert alert-danger" role="alert">
+								<span>A simple danger alert with</span>
+								<a href="#" class="alert-link">an example
+									link</a>. Give it a
+								click if you like.
+							</div>
+							<div class="alert alert-warning" role="alert">
+								<span>A simple warning alert with</span>
+								<a href="#" class="alert-link">an example
+									link</a>. Give it
+								a click if you like.
+							</div>
+							<div class="alert alert-info" role="alert">
+								<span>A simple info alert with</span>
+								<a href="#" class="alert-link">an example
+									link</a>. Give it a
+								click if you like.
+							</div>
+							<div class="alert alert-light" role="alert">
+								<span>A simple light alert with</span>
+								<a href="#" class="alert-link">an example
+									link</a>. Give it a
+								click if you like.
+							</div>
+							<div class="alert alert-dark" role="alert">
+								<span>A simple dark alert with</span>
+								<a href="#" class="alert-link">an example
+									link</a>. Give it a
+								click if you like.
+							</div>
+						</div>
+						<!-- //LINK COLOR -->
+
+						<!-- LINK COLOR CODE -->
+						<div class="col-lg-6">
+							<div class="code">
+								<pre><code class="language-html" data-lang="html">
+<span>&lt;</span><span >div</span> <span>class</span><span >=</span><span>"alert alert-primary"</span> <span>role</span><span >=</span><span>"alert"</span><span>&gt;</span>
+	<span>A simple primary alert with</span><span>&lt;</span><span >a</span> <span>href</span><span>=</span><span >"#"</span> <span>class</span><span >=</span><span>"alert-link"</span><span>&gt;</span><span>an example link.</span><span>&lt;/</span><span>a</span><span>&gt;</span><span>Give it a click if you like.</span>
+<span>&lt;/</span><span >div</span><span>&gt;</span>
+<span>&lt;</span><span >div</span> <span>class</span><span >=</span><span>"alert alert-secondary"</span> <span>role</span><span >=</span><span>"alert"</span><span>&gt;</span>
+	<span>A simple secondary alert with</span><span>&lt;</span><span >a</span> <span>href</span><span>=</span><span >"#"</span> <span>class</span><span >=</span><span>"alert-link"</span><span>&gt;</span><span>an example link.</span><span>&lt;/</span><span>a</span><span>&gt;</span><span>Give it a click if you like.</span>
+<span>&lt;/</span><span >div</span><span>&gt;</span>
+<span>&lt;</span><span >div</span> <span>class</span><span >=</span><span>"alert alert-success"</span> <span>role</span><span >=</span><span>"alert"</span><span>&gt;</span>
+	<span>A simple success alert with</span><span>&lt;</span><span >a</span> <span>href</span><span>=</span><span >"#"</span> <span>class</span><span >=</span><span>"alert-link"</span><span>&gt;</span><span>an example link.</span><span>&lt;/</span><span>a</span><span>&gt;</span><span>Give it a click if you like.</span>
+<span>&lt;/</span><span >div</span><span>&gt;</span>
+<span>&lt;</span><span >div</span> <span>class</span><span >=</span><span>"alert alert-danger"</span> <span>role</span><span >=</span><span>"alert"</span><span>&gt;</span>
+	<span>A simple danger alert with</span><span>&lt;</span><span >a</span> <span>href</span><span>=</span><span >"#"</span> <span>class</span><span >=</span><span>"alert-link"</span><span>&gt;</span><span>an example link.</span><span>&lt;/</span><span>a</span><span>&gt;</span><span>Give it a click if you like.</span>
+<span>&lt;/</span><span >div</span><span>&gt;</span>
+<span>&lt;</span><span >div</span> <span>class</span><span >=</span><span>"alert alert-warning"</span> <span>role</span><span >=</span><span>"alert"</span><span>&gt;</span>
+	<span>A simple warning alert with</span><span>&lt;</span><span >a</span> <span>href</span><span>=</span><span >"#"</span> <span>class</span><span >=</span><span>"alert-link"</span><span>&gt;</span><span>an example link.</span><span>&lt;/</span><span>a</span><span>&gt;</span><span>Give it a click if you like.</span>
+<span>&lt;/</span><span >div</span><span>&gt;</span>
+<span>&lt;</span><span >div</span> <span>class</span><span >=</span><span>"alert alert-info"</span> <span>role</span><span >=</span><span>"alert"</span><span>&gt;</span>
+	<span>A simple info alert with</span><span>&lt;</span><span >a</span> <span>href</span><span
+>=</span><span >"#"</span> <span>class</span><span >=</span><span>"alert-link"</span><span>&gt;</span<span>an example link.</span<span>&lt;/</span><span>a</span<span>&gt;</span><span>Give it a click if you like.</span>
+<span>&lt;/</span><span >div</span><span>&gt;</span>
+<span>&lt;</span><span >div</span> <span>class</span><span >=</span><span>"alert alert-light"</span> <span>role</span><span >=</span><span>"alert"</span><span>&gt;</span>
+	<span>A simple light alert with</span><span>&lt;</span><span >a</span> <span>href</span><span>=</span><span >"#"</span> <span>class</span><span >=</span><span>"alert-link"</span><span>&gt;</span><span>an example link.</span><span>&lt;/</span><span>a</span><span>&gt;</span><span>Give it a click if you like.</span>
+<span>&lt;/</span><span >div</span><span>&gt;</span>
+<span>&lt;</span><span >div</span> <span>class</span><span >=</span><span>"alert alert-dark"</span> <span>role</span><span >=</span><span>"alert"</span><span>&gt;</span>
+	<span>A simple dark alert with</span><span>&lt;</span><span >a</span> <span>href</span><span>=</span><span >"#"</span> <span>class</span><span >=</span><span>"alert-link"</span><span>&gt;</span><span>an example link.</span><span>&lt;/</span><span>a</span><span>&gt;</span><span>Give it a click if you like.</span>
+<span>&lt;/</span><span >div</span><span>&gt;</span>
+</code></pre>
+							</div>
+						</div>
+						<!-- //Link COLOR CODE -->
+					</div>
+				</div>
+
+				<!-- PROGRESS BAR - COMPONENT -->
+				<div class="Elements__component py-4 ">
+					<h2 class="heading mb-3">Progress Bars</h2>
+					<div class="info">
+						<!-- PROGRESS BARS -->
+						<div class="progress mb-3">
+							<div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0"
+								aria-valuemax="100"></div>
+						</div>
+						<div class="progress mb-3">
+							<div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25"
+								aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="progress mb-3">
+							<div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50"
+								aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="progress mb-3">
+							<div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+								aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar" role="progressbar" style="width: 100%" aria-valuenow="100"
+								aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<!-- PROGRESS BAR CODE -->
+					<div class="code">
+						<pre><code class="language-html" data-lang="html">
+<span>&lt;</span><span >div</span> <span>class</span><span>=</span><span>"progress"</span><span>&gt;</span>
+	<span>&lt;</span><span >div</span> <span>class</span><span>=</span><span>"progress-bar"</span> <span>role</span><span>=</span><span>"progressbar"</span> <span>aria-valuenow</span><span>=</span><span
+>"0"</span> <span>aria-valuemin</span><span>=</span><span >"0"</span> <span>aria-valuemax</span><span>=</span><span >"100"</span><span
+>&gt;&lt;/</span><span >div</span><span>&gt;</span>
+<span>&lt;/</span><span >div</span><span>&gt;</span>
+<span>&lt;</span><span >div</span> <span>class</span><span>=</span><span>"progress"</span><span>&gt;</span>
+	<span>&lt;</span><span >div</span> <span>class</span><span>=</span><span>"progress-bar"</span> <span>role</span><span>=</span><span>"progressbar"</span> <span>style</span><span>=</span><span >"width:25%"</span> <span>aria-valuenow</span><span>=</span><span >"25"</span> <span
+>aria-valuemin</span><span>=</span><span >"0"</span> <span>aria-valuemax</span><span>=</span><span >"100"</span><span
+>&gt;&lt;/</span><span >div</span><span>&gt;</span>
+<span>&lt;/</span><span >div</span><span>&gt;</span>
+<span>&lt;</span><span >div</span> <span>class</span><span>=</span><span>"progress"</span><span>&gt;</span>
+	<span>&lt;</span><span >div</span> <span>class</span><span>=</span><span>"progress-bar"</span> <span>role</span><span>=</span><span>"progressbar"</span> <span>style</span><span>=</span><span >"width:50%"</span> <span>aria-valuenow</span><span>=</span><span >"50"</span> <span
+>aria-valuemin</span><span>=</span><span >"0"</span> <span>aria-valuemax</span><span>=</span><span >"100"</span><span
+>&gt;&lt;/</span><span >div</span><span>&gt;</span>
+<span>&lt;/</span><span >div</span><span>&gt;</span>
+<span>&lt;</span><span >div</span> <span>class</span><span>=</span><span>"progress"</span><span>&gt;</span>
+	<span>&lt;</span><span >div</span> <span>class</span><span>=</span><span>"progress-bar"</span> <span>role</span><span>=</span><span>"progressbar"</span> <span>style</span><span>=</span><span >"width:75%"</span> <span>aria-valuenow</span><span>=</span><span >"75"</span> <span
+>aria-valuemin</span><span>=</span><span >"0"</span> <span>aria-valuemax</span><span>=</span><span >"100"</span><span
+>&gt;&lt;/</span><span >div</span><span>&gt;</span>
+<span>&lt;/</span><span >div</span><span>&gt;</span>
+<span>&lt;</span><span >div</span> <span>class</span><span>=</span><span>"progress"</span><span>&gt;</span>
+	<span>&lt;</span><span >div</span> <span>class</span><span>=</span><span>"progress-bar"</span> <span>role</span><span>=</span><span>"progressbar"</span> <span>style</span><span>=</span><span >"width:100%"</span> <span>aria-valuenow</span><span>=</span><span >"100"</span> <span
+>aria-valuemin</span><span>=</span><span >"0"</span> <span>aria-valuemax</span><span>=</span><span >"100"</span><span
+>&gt;&lt;/</span><span >div</span><span>&gt;</span>
+<span>&lt;/</span><span >div</span><span>&gt;</span>
+
+</code></pre>
+					</div>
+				</div>
+
+				<!-- PROGRESS BAR BACKGROUND COLOR- COMPONENT -->
+				<div class="Elements__component py-4 ">
+					<h2 class="heading mb-3">Backgrounds</h2>
+					<div class="info">
+						<!-- PROGRESS BARS COLOR -->
+						<div class="progress mb-3">
+							<div class="progress-bar bg-success" role="progressbar" style="width: 25%"
+								aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="progress mb-3">
+							<div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50"
+								aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="progress mb-3 ">
+							<div class="progress-bar bg-primary" role="progressbar" style="width: 75%"
+								aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="progress mb-3">
+							<div class="progress-bar bg-warning" role="progressbar" style="width: 85%"
+								aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar bg-danger" role="progressbar" style="width: 100%"
+								aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<!-- PROGRESS BAR BACKGROUND COLOR CODE -->
+					<div class="code">
+						<pre><code class="language-html" data-lang="html">
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"progress"</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"progress-bar bg-success"</span><span>role</span><span>=</span><span>"progressbar"</span><span>style</span><span>=</span><span>"width:25%"</span> <span>aria-valuenow</span><span>=</span><span>"25"</span><span>aria-valuemin</span><span>=</span><span>"0"</span><span>aria-valuemax</span><span>=</span><span>"100"</span><span>&gt;&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"progress"</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"progress-bar bg-info"</span><span>role</span><span>=</span><span>"progressbar"</span> <span>style</span><span>=</span><span>"width:50%"</span><span>aria-valuenow</span><span>=</span><span>"50"</span> <span>aria-valuemin</span><span>=</span><span>"0"</span><span>aria-valuemax</span><span>=</span><span>"100"</span><span>&gt;&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"progress"</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"progress-bar bg-primary"</span><span>role</span><span>=</span><span>"progressbar"</span> <span>style</span><span>=</span><span>"width:75%"</span><span>aria-valuenow</span><span>=</span><span>"75"</span> <span>aria-valuemin</span><span>=</span><span>"0"</span><span>aria-valuemax</span><span>=</span><span>"100"</span><span>&gt;&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"progress"</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"progress-bar bg-warning"</span><span>role</span><span>=</span><span>"progressbar"</span> <span>style</span><span>=</span><span>"width:85%"</span><span>aria-valuenow</span><span>=</span><span>"85"</span> <span>aria-valuemin</span><span>=</span><span>"0"</span><span>aria-valuemax</span><span>=</span><span>"100"</span><span>&gt;&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"progress"</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"progress-bar bg-danger"</span><span>role</span><span>=</span><span>"progressbar"</span> <span>style</span><span>=</span><span>"width:100%"</span><span>aria-valuenow</span><span>=</span><span>"100"</span> <span>aria-valuemin</span><span>=</span><span>"0"</span><span>aria-valuemax</span><span>=</span><span>"100"</span><span>&gt;&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+
+</code></pre>
+					</div>
+				</div>
+
+				<!-- STRIPED - COMPONENT -->
+				<div class="Elements__component py-4 ">
+					<h2 class="heading mb-3">Striped</h2>
+					<div class="info">
+						<!-- STRIPED -->
+						<div class="progress mb-3">
+							<div class="progress-bar progress-bar-striped" role="progressbar" style="width: 10%"
+								aria-valuenow="10" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="progress mb-3">
+							<div class="progress-bar progress-bar-striped bg-success" role="progressbar"
+								style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="progress mb-3">
+							<div class="progress-bar progress-bar-striped bg-info" role="progressbar" style="width: 50%"
+								aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="progress mb-3">
+							<div class="progress-bar progress-bar-striped bg-warning" role="progressbar"
+								style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+						<div class="progress">
+							<div class="progress-bar progress-bar-striped bg-danger" role="progressbar"
+								style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+						</div>
+					</div>
+					<!-- STRIPED CODE -->
+					<div class="code">
+						<pre><code class="language-html" data-lang="html">
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"progress"</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"progress-bar progress-bar-striped"</span><span>role</span><span>=</span><span>"progressbar"</span><span>style</span><span>=</span><span>"width:25%"</span> <span>aria-valuenow</span><span>=</span><span>"25"</span><span>aria-valuemin</span><span>=</span><span>"0"</span><span>aria-valuemax</span><span>=</span><span>"100"</span><span>&gt;&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"progress"</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"progress-bar progress-bar-striped bg-success"</span><span>role</span><span>=</span><span>"progressbar"</span> <span>style</span><span>=</span><span>"width:50%"</span><span>aria-valuenow</span><span>=</span><span>"50"</span> <span>aria-valuemin</span><span>=</span><span>"0"</span><span>aria-valuemax</span><span>=</span><span>"100"</span><span>&gt;&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"progress"</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"progress-bar progress-bar-striped bg-info"</span><span>role</span><span>=</span><span>"progressbar"</span> <span>style</span><span>=</span><span>"width:75%"</span><span>aria-valuenow</span><span>=</span><span>"75"</span> <span>aria-valuemin</span><span>=</span><span>"0"</span><span>aria-valuemax</span><span>=</span><span>"100"</span><span>&gt;&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"progress"</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"progress-bar progress-bar-striped bg-warning"</span><span>role</span><span>=</span><span>"progressbar"</span> <span>style</span><span>=</span><span>"width:85%"</span><span>aria-valuenow</span><span>=</span><span>"85"</span> <span>aria-valuemin</span><span>=</span><span>"0"</span><span>aria-valuemax</span><span>=</span><span>"100"</span><span>&gt;&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"progress"</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"progress-bar progress-bar-striped bg-danger"</span><span>role</span><span>=</span><span>"progressbar"</span> <span>style</span><span>=</span><span>"width:100%"</span><span>aria-valuenow</span><span>=</span><span>"100"</span> <span>aria-valuemin</span><span>=</span><span>"0"</span><span>aria-valuemax</span><span>=</span><span>"100"</span><span>&gt;&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+
+</code></pre>
+					</div>
+				</div>
+
+				<!-- INPUT - COMPONENT -->
+				<div class="Elements__component py-4 ">
+					<h2 class="heading mb-3">Input Group</h2>
+					<div class="info">
+						<!-- INPUT -->
+						<div class="input-group mb-3">
+							<span class="input-group-text" id="basic-addon1">@</span>
+							<input type="text" class="form-control" placeholder="Username" aria-label="Username"
+								aria-describedby="basic-addon1">
+						</div>
+
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" placeholder="Recipient's username"
+								aria-label="Recipient's username" aria-describedby="basic-addon2">
+							<span class="input-group-text" id="basic-addon2">@example.com</span>
+						</div>
+
+						<label for="basic-url" class="form-label">Your vanity URL</label>
+						<div class="input-group mb-3">
+							<span class="input-group-text" id="basic-addon3">https://example.com/users/</span>
+							<input type="text" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+						</div>
+
+						<div class="input-group mb-3">
+							<span class="input-group-text">$</span>
+							<input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+							<span class="input-group-text">.00</span>
+						</div>
+
+						<div class="input-group">
+							<span class="input-group-text">With textarea</span>
+							<textarea class="form-control" aria-label="With textarea"></textarea>
+						</div>
+					</div>
+					<!-- INPUT CODE -->
+					<div class="code">
+						<pre><code class="language-html" data-lang="html">
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"input-group mb-3"</span><span>&gt;</span>
+  <span>&lt;</span><span>span</span> <span>class</span><span>=</span><span>"input-group-text"</span> <span>id</span><span>=</span><span>"basic-addon1"</span><span>&gt;</span><span>@</span><span>&lt;/</span><span>span</span><span>&gt;</span>
+  <span>&lt;</span><span>input</span> <span>type</span><span>=</span><span>"text"</span> <span>class</span><span>=</span><span>"form-control"</span><span>placeholder</span><span>=</span><span>"Username"</span> <span>aria-label</span><span>=</span><span>"Username"</span> <span>aria-describedby</span><span>=</span><span>"basic-addon1"</span><span>&gt;</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"input-group mb-3"</span><span>&gt;</span>
+  <span>&lt;</span><span>input</span> <span>type</span><span>=</span><span>"text"</span> <span>class</span><span>=</span><span>"form-control"</span><span>placeholder</span><span>=</span><span>"Recipient's username"</span> <span>aria-label</span><span>=</span><span>"Recipient's username"</span> <span>aria-describedby</span><span>=</span><span>"basic-addon2"</span><span>&gt;</span>
+  <span>&lt;</span><span>span</span> <span>class</span><span>=</span><span>"input-group-text"</span> <span>id</span><span>=</span><span>"basic-addon2"</span><span>&gt;</span><span>@example.com</span><span>&lt;/</span><span>span</span><span>&gt;</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+
+<span>&lt;</span><span>label</span> <span>for</span><span>=</span><span>"basic-url"</span> <span>class</span><span>=</span><span>"form-label"</span><span>&gt;</span><span>Your vanity URL</span><span>&lt;/</span><span>label</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"input-group mb-3"</span><span>&gt;</span>
+  <span>&lt;</span><span>span</span> <span>class</span><span>=</span><span>"input-group-text"</span> <span>id</span><span>=</span><span>"basic-addon3"</span><span>&gt;</span><span>https://example.com/users/</span><span>&lt;/</span><span>span</span><span>&gt;</span>
+  <span>&lt;</span><span>input</span> <span>type</span><span>=</span><span>"text"</span> <span>class</span><span>=</span><span>"form-control"</span><span>id</span><span>=</span><span>"basic-url"</span> <span>aria-describedby</span><span>=</span><span>"basic-addon3"</span><span>&gt;</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"input-group mb-3"</span><span>&gt;</span>
+  <span>&lt;</span><span>span</span> <span>class</span><span>=</span><span>"input-group-text"</span><span>&gt;</span>$<span>&lt;/</span><span>span</span><span>&gt;</span>
+  <span>&lt;</span><span>input</span> <span>type</span><span>=</span><span>"text"</span> <span>class</span><span>=</span><span>"form-control"</span><span>aria-label</span><span>=</span><span>"Amount (to the nearest dollar)"</span><span>&gt;</span>
+  <span>&lt;</span><span>span</span> <span>class</span><span>=</span><span>"input-group-text"</span><span>&gt;</span><span>.00</span><span>&lt;/</span><span>span</span><span>&gt;</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"input-group"</span><span>&gt;</span>
+  <span>&lt;</span><span>span</span> <span>class</span><span>=</span><span>"input-group-text"</span><span>&gt;</span><span>With textarea</span><span>&lt;/</span><span>span</span><span>&gt;</span>
+  <span>&lt;</span><span>textarea</span> <span>class</span><span>=</span><span>"form-control"</span> <span>aria-label</span><span>=</span><span>"Withtextarea"</span><span>&gt;&lt;/</span><span>textarea</span><span>&gt;</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+						</code></pre>
+
+					</div>
+				</div>
+
+				<!-- INPUT FORM - COMPONENT -->
+				<div class="Elements__component py-4 ">
+					<h2 class="heading mb-3">Input Form</h2>
+					<div class="info">
+						<!-- INPUT FORM -->
+						<form>
+							<div class="mb-3">
+								<label for="exampleInputEmail1" class="form-label">Email address</label>
+								<input type="email" class="form-control" id="exampleInputEmail1"
+									aria-describedby="emailHelp" placeholder="Enter email">
+								<div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+								</div>
+							</div>
+							<div class="mb-3">
+								<label for="exampleInputPassword1" class="form-label">Password</label>
+								<input type="password" class="form-control" id="exampleInputPassword1"
+									placeholder="Password">
+							</div>
+							<div class="mb-3 form-check">
+								<input type="checkbox" class="form-check-input" id="exampleCheck1">
+								<label class="form-check-label" for="exampleCheck1">Check me out</label>
+							</div>
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</form>
+					</div>
+					<!-- INPUT FORM CODE-->
+					<div class="code">
+						<pre><code class="language-html" data-lang="html"><span>&lt;</span><span>form</span><span>&gt;</span>
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"mb-3"</span><span>&gt;</span>
+  <span>&lt;</span><span>label</span> <span>for</span><span>=</span><span>"exampleInputEmail1"</span> <span>class</span><span>=</span><span>"form-label"</span><span>&gt;</span><span>Email address</span><span>&lt;/</span><span>label</span><span>&gt;</span>
+  <span>&lt;</span><span>input</span> <span>type</span><span>=</span><span>"email"</span> <span>class</span><span>=</span><span>"form-control"</span> <span>id</span><span>=</span><span>"exampleInputEmail1"</span> <span>aria-describedby</span><span>=</span><span>"emailHelp"</span> <span>placeholder</span><span>=</span><span>"Enter email"</span><span>&gt;</span>
+  <span>&lt;</span><span>div</span> <span>id</span><span>=</span><span>"emailHelp"</span> <span>class</span><span>=</span><span>"form-text"</span><span>&gt;</span>
+    <span>We'll never share your email with anyone else.</span>
+  <span>&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"mb-3"</span><span>&gt;</span>
+  <span>&lt;</span><span>label</span> <span>for</span><span>=</span><span>"exampleInputPassword1"</span> <span>class</span><span>=</span><span>"form-label"</span><span>&gt;</span><span>Password</span><span>&lt;/</span><span>label</span><span>&gt;</span>
+  <span>&lt;</span><span>input</span> <span>type</span><span>=</span><span>"password"</span> <span>class</span><span>=</span><span>"form-control"</span> <span>id</span><span>=</span><span>"exampleInputPassword1"</span> <span>placeholder</span><span>=</span><span>"Password"</span><span>&gt;</span>
+  <span>&lt;/</span><span>div</span><span>&gt;</span>
+
+<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"mb-3 form-check"</span><span>&gt;</span>
+  <span>&lt;</span><span>input</span> <span>type</span><span>=</span><span>"checkbox"</span> <span>class</span><span>=</span><span>"form-check-input"</span> <span>id</span><span>=</span><span>"exampleCheck1"</span><span>&gt;</span>
+  <span>&lt;</span><span>label</span> <span>class</span><span>=</span><span>"form-check-label"</span> <span>for</span><span>=</span><span>"exampleCheck1"</span><span>&gt;</span><span>Check me out</span><span>&lt;/</span><span>label</span><span>&gt;</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+
+<span>&lt;</span><span>button</span> <span>type</span><span>=</span><span>"submit"</span> <span>class</span><span>=</span><span>"btn btn-primary"</span><span>&gt;</span><span>Submit</span><span>&lt;/</span><span>button</span><span>&gt;</span>
+<span>&lt;/</span><span>form</span><span>&gt;</span>
+
+</code></pre>
+					</div>
+				</div>
+
+				<!-- MEDIA OBJECT - COMPONENT -->
+				<div class="Elements__component py-4 ">
+					<h2 class="heading mb-3">Media Object</h2>
+					<div class="info">
+						<!-- MEDIA OBJECT -->
+						<div class="d-flex">
+							<div class="flex-shrink-0">
+								<svg class="bd-placeholder-img" width="100" height="100"
+									xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image"
+									preserveAspectRatio="xMidYMid slice" focusable="false">
+									<title>Placeholder</title>
+									<rect width="100%" height="100%" fill="#e5e5e5"></rect><text x="30%" y="50%"
+										fill="#999" dy=".3em">Image</text>
+								</svg>
+								<!-- <img src="..." alt="..."> -->
+							</div>
+							<div class="flex-grow-1 ms-3">
+								<h5 class="mt-0">Media heading</h5>
+								This is some content from a media component. You can replace this with any content and
+								adjust it as needed.
+							</div>
+						</div>
+					</div>
+					<!-- MEDIA OBJECT CODE-->
+					<div class="code">
+						<pre><code class="language-html" data-lang="html"><span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"d-flex"</span><span>&gt;</span>
+  <span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"flex-shrink-0"</span><span>&gt;</span>
+	<span>&lt;</span><span>img</span> <span>src</span><span>=</span><span>"..."</span> <span>alt</span><span>=</span><span>"..."</span><span>&gt;</span>
+  <span>&lt;/</span><span>div</span><span>&gt;</span>
+  <span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"flex-grow-1 ms-3"</span><span>&gt;</span>
+	<span>&lt;h5</span> <span>class=</span><span>"mt-0"</span><span>&gt;</span><span>Media heading</span><span>&lt;/h5&gt;</span>
+	<span>This is some content from a media component. You can replace this with any content and adjust it as needed.</span>
+  <span>&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+
+</code></pre>
+					</div>
+				</div>
+
+				<!--NESTING - COMPONENT -->
+				<div class="Elements__component py-4 ">
+					<h2 class="heading mb-3">Nesting</h2>
+					<div class="info">
+						<!-- NESTING -->
+						<div class="d-flex">
+							<div class="flex-shrink-0">
+								<svg class="bd-placeholder-img" width="100" height="100"
+									xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Image"
+									preserveAspectRatio="xMidYMid slice" focusable="false">
+									<title>Placeholder</title>
+									<rect width="100%" height="100%" fill="#e5e5e5"></rect><text x="30%" y="50%"
+										fill="#999" dy=".3em">Image</text>
+								</svg>
+								<!-- <img src="..." alt="..."> -->
+							</div>
+							<div class="flex-grow-1 ms-3">
+								<h5 class="mt-0">Media heading</h5>
+								This is some content from a media component. You can replace this with any content and
+								adjust it as needed.
+
+								<div class="d-flex mt-5">
+									<div class="flex-shrink-0">
+										<svg class="bd-placeholder-img" width="100" height="100"
+											xmlns="http://www.w3.org/2000/svg" role="img"
+											aria-label="Placeholder: Image" preserveAspectRatio="xMidYMid slice"
+											focusable="false">
+											<title>Placeholder</title>
+											<rect width="100%" height="100%" fill="#e5e5e5"></rect><text x="30%" y="50%"
+												fill="#999" dy=".3em">Image</text>
+										</svg>
+										<!-- <img src="..." alt="..."> -->
+									</div>
+									<div class="flex-grow-1 ms-3">
+										<h5 class="mt-0">Media heading</h5>
+										This is some content from a media component. You can replace this with any
+										content and
+										adjust it as needed.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- NESTING CODE-->
+					<div class="code">
+						<pre><code class="language-html" data-lang="html"><span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"d-flex"</span><span>&gt;</span>
+  <span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"flex-shrink-0"</span><span>&gt;</span>
+	<span>&lt;</span><span>img</span> <span>src</span><span>=</span><span>"..."</span> <span>alt</span><span>=</span><span>"..."</span><span>&gt;</span>
+  <span>&lt;/</span><span>div</span><span>&gt;</span>
+  <span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"flex-grow-1 ms-3"</span><span>&gt;</span>
+	<span>&lt;h5</span> <span>class=</span><span>"mt-0"</span><span>&gt;</span><span>Media heading</span><span>&lt;/h5&gt;</span>
+	<span>This is some content from a media component. You can replace this with any content and adjust it as needed.</span>
+
+	<span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"d-flex mt-5"</span><span>&gt;</span>
+	  <span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"flex-shrink-0"</span><span>&gt;</span>
+		<span>&lt;</span><span>img</span> <span>src</span><span>=</span><span>"..."</span><span>alt</span><span>=</span><span>"..."</span><span>&gt;</span>
+	  <span>&lt;/</span><span>div</span><span>&gt;</span>
+	  <span>&lt;</span><span>div</span> <span>class</span><span>=</span><span>"flex-grow-1 ms-3"</span><span>&gt;</span>
+		<span>&lt;h5</span> <span>class=</span><span>"mt-0"</span><span>&gt;</span><span>Media heading</span><span>&lt;/h5&gt;</span>
+		<span>This is some content from a media component. You can replace this with any content and adjust it as needed.</span>
+	  <span>&lt;/</span><span>div</span><span>&gt;</span>
+	<span>&lt;/</span><span>div</span><span>&gt;</span>
+  <span>&lt;/</span><span>div</span><span>&gt;</span>
+<span>&lt;/</span><span>div</span><span>&gt;</span>
+
+</code></pre>
+					</div>
+				</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__content py-5">
+			<div class="container">
+				<div class="row footer__list">
+					<div class="col-lg-4 col-md-6 mb-4 footer__item-1">
+						<div class="footer__item-logo mb-4">
+							<a href="" class="footer__item-brand">
+								<i class="fa-solid fa-align-right"></i>
+								<span>Corp Vision</span>
+								<span class="text-logo">Vision to your Future</span>
+							</a>
+						</div>
+						<p class="mb-3">
+							Lorem ipsum viverra feugiat. Pellen tesque libero ut justo,
+							ultrices in ligula. Semper at tempufddfel. Lorem ipsum dolor sit
+							amet Semper at elit team advisors.
+						</p>
+						<div class="footer__item-socials">
+							<a href="">
+								<i class="fa-brands fa-facebook-f"></i>
+							</a>
+							<a href="">
+								<i class="fa-brands fa-twitter"></i>
+							</a>
+							<a href="">
+								<i class="fa-brands fa-instagram"></i>
+							</a>
+							<a href="">
+								<i class="fa-brands fa-linkedin-in"></i>
+							</a>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 mb-4 footer__item-2">
+						<h6 class="footer__title">Contact Info</h6>
+						<p class="mb-2">
+							Address : Corp Vision, 343 marketing, #21 cravel 1st lane
+							street, NY - 62617.
+						</p>
+						<p class="mb-2">
+							Phone Number :
+							<a href="tel: +1(21) 234 4567"> +1(21) 234 4567</a>
+						</p>
+						<p class="mb-2">
+							Email :
+							<a href="mailto:info@example.com"> info@example.com</a>
+						</p>
+						<p class="mb-2">
+							Support :
+							<a href="mailto: info@support.com"> info@support.com</a>
+						</p>
+					</div>
+					<div class="col-lg-2 col-md-6 col-sm-5 col-6 mb-4 footer__item-3">
+						<h6 class="footer__title">Categories</h6>
+						<ul>
+							<li>
+								<a href=""> Marketing Strategy</a>
+							</li>
+							<li>
+								<a href=""> Startup Business</a>
+							</li>
+							<li>
+								<a href=""> Web development</a>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-2 col-md-6 col-sm-5 col-6 mb-4 footer__item-4">
+						<h6 class="footer__title">Meta</h6>
+						<ul>
+							<li>
+								<a href="">Log in</a>
+							</li>
+							<li>
+								<a href="">Entries feed</a>
+							</li>
+							<li>
+								<a href=""> Comments feed</a>
+							</li>
+							<li>
+								<a href="">WordPress.org</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<section class="footer__copyright text-center">
+		<div class="container">
+			<p>
+				© 2022 Corp Vision All Rights Reserved | WordPress Theme by
+				<a href="">W3Layouts.</a>
+			</p>
+		</div>
+	</section>
+
+	<!-- BACK-TO-TOP BUTTON -->
+	<a href="" class="backToTop cd-top text-replace js-cd-top cd-top--is-visible cd-top--fade-out"><i
+			class="fa fa-angle-up"></i></a>
+
+	<!-- JQUERY JS -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+
+	<!-- JQUERY CDN -->
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"
+		integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+	<!-- BACK-TO-TOP JS -->
+	<script src="./asset/js/main.js"></script>
+	<script src="./asset/js/util.js"></script>
+</body>
+
 </html>
