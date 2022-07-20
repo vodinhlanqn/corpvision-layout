@@ -1,0 +1,47 @@
+BÀI TẬP CAPSTON - Corp Vision Layout
+
+https://wp.w3layouts.com/corpvision/
+
+--------------------------------------------
+
+THÔNG TIN HỌC VIÊN - LỚP BC 34:
+
+1. ĐINH TRI THỨC
+2. VÕ ĐÌNH LÂN
+
+---------------------------------------------
+BẢNG PHÂN CHIA CÔNG VIỆC LÀM LAYOUT:
+
+A. TRANG LÀM CHUNG (Trang chủ )
+
+    1. ĐINH TRI THỨC
+        - Header
+        - Carousel
+        - About Us
+        - Every Day Brings New Challenges
+        - Always there for your care, our Services
+        - Our Gallery
+    
+    2. VÕ ĐÌNH LÂN
+        - Your Success is Our Success
+        - Happy Clients Feedback
+        - Last News
+        - Subscribe
+        - Footer
+
+B. CÁC TRANG LÀM RIÊNG
+
+    1. ĐINH TRI THỨC
+        - About Page
+        - Contact Page
+        - Single Landing Page
+
+    1. VÕ ĐÌNH LÂN
+        - Services Page
+        - Blog Posts Page
+        - Element Page
+        - 404 Page
+
+
+
+
